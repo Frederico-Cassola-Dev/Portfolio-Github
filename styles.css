@@ -371,7 +371,10 @@ h3 a:hover {
 
 @media (max-width: 480px) {
 
-    body{position: relative;}
+    body {
+        position: relative;
+    }
+
     /*---------------------NAV-------------------------*/
 
     .nav-list a {
