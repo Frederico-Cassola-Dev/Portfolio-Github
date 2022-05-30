@@ -122,7 +122,6 @@ h1 {
     font-style: italic;
     color: white;
     margin: 0 auto;
-    transform: scale(0);
     animation-name: hideAnimation;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
@@ -367,9 +366,9 @@ h3 a:hover {
     transform: scale(1) skewX(-45deg);
 }
 
-/* ---------------------------------------------------------- */
-/*-----------------------MEDIA QUERRRIES----------------------*/
-/* ---------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/*---------------------------MEDIA QUERRRIES-----------------------*/
+/* --------------------------------------------------------------- */
 
 @media (max-width: 480px) {
 
@@ -377,7 +376,7 @@ h3 a:hover {
         position: relative;
     }
 
-    /*---------------------NAV-------------------------*/
+    /*----------------------------NAV------------------------------*/
 
     .nav-list a {
         padding: 5px;
@@ -436,7 +435,7 @@ h3 a:hover {
         margin: 0 auto;
     }
 
-    /*---------------------CONTACT-------------------------*/
+    /*------------------------CONTACT-----------------------------*/
 
     .contact-container {
         flex-direction: column;
