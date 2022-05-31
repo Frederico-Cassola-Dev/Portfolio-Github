@@ -10,73 +10,18 @@
 font-family: 'Varela Round', sans-serif; */
 
 /*-----------------GENERAL--------------------*/
-
-
 body {
+    height: 100vh;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
     background-image: radial-gradient(circle, #1a3b6e, #00476c, #007b9b, #00b3bd, #58ebd1);
-
 }
 
 ul {
     list-style-type: none;
 }
 
-/* ----------------------------------------------------- */
-/*--------------------------HEADER-----------------------*/
-/* ----------------------------------------------------- */
-
-/*---------------------NAV-------------------------*/
-
-nav {
-    position: fixed;
-    top: 0px;
-    left: 0.5%;
-    width: 99%;
-    height: 40px;
-    background-color: #00476c95;
-    outline: 1px solid gray;
-    border-radius: 10px;
-    z-index: 1;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-list a {
-    position: relative;
-    display: block;
-    margin: 5px 0;
-    font-size: 1.8rem;
-    color: whitesmoke;
-    text-decoration: none;
-    transition: all 300ms ease-out;
-}
-
-.nav-list a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    width: 110%;
-    height: 3px;
-    transform: scale(0) skewX(0);
-    transform-origin: left;
-    background: rgb(245, 102, 0);
-    transition: transform 300ms ease-out;
-}
-
-.nav-list a:hover::after {
-    transform: scale(1) skewX(-45deg);
-}
-
-/* ---------------------------------------------------------- */
-/*----------------------WELCOME SECTION-----------------------*/
-/* ---------------------------------------------------------- */
+/*-----------------HEADER--------------------*/
 
 #welcome-section {
     display: flex;
@@ -122,6 +67,7 @@ h1 {
     font-style: italic;
     color: white;
     margin: 0 auto;
+    transform: scale(0);
     animation-name: hideAnimation;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
@@ -144,31 +90,72 @@ h1 {
 @keyframes hideAnimation {
     0% {
         transform: scale(0);
-    }
+   }
+   15% {
+    transform: scale(0);
+   }
+   25% {
+    transform: scale(0);
+   }
+   50% {
+    transform: scale(1);
+   }
+   75% {
+    transform: scale(0);
+   }
+   85% {
+    transform: scale(0);
+   }
+   100% {
+    transform: scale(0);
+   }
+   }
 
-    15% {
-        transform: scale(0);
-    }
+/*-----------------NAV--------------------*/
 
-    25% {
-        transform: scale(0);
-    }
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0.5%;
+    width: 99%;
+    height: 40px;
+    background-color: #00476c95;
+    outline: 1px solid gray;
+    border-radius: 10px;
+    z-index: 1;
+}
 
-    50% {
-        transform: scale(1);
-    }
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    75% {
-        transform: scale(0);
-    }
+.nav-list a {
+    position: relative;
+    display: block;
+    margin: 5px 0;
+    font-size: 1.8rem;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+}
 
-    85% {
-        transform: scale(0);
-    }
+.nav-list a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 110%;
+    height: 3px;
+    transform: scale(0) skewX(0);
+    transform-origin: left;
+    background: rgb(245, 102, 0);
+    transition: transform 300ms ease-out;
+}
 
-    100% {
-        transform: scale(0);
-    }
+.nav-list a:hover::after {
+    transform: scale(1) skewX(-45deg);
 }
 
 /* ----------------------------------------------------- */
@@ -254,7 +241,7 @@ h4 {
     padding: 10px;
 }
 
-/*-----------------PROJECTS TITLES--------------------*/
+/*-----------------PROJECTS TITLE--------------------*/
 
 h3 a {
     display: block;
@@ -275,9 +262,10 @@ h3 a:hover {
 /*--------------------------ABOUT----------------------*/
 /* --------------------------------------------------- */
 
+/*-----------------------ABOUT IMG---------------------*/
+
 .about-container {
-    min-height: 100%;
-    margin-bottom: 50px;
+    height: 100vh;
 }
 
 .img-about {
@@ -304,21 +292,23 @@ h3 a:hover {
 .about-description {
     font-size: 1.5rem;
     letter-spacing: 2px;
+    margin: 20px auto;
 }
-
 
 /* ----------------------------------------------------- */
 /*--------------------------CONTACT----------------------*/
 /* ----------------------------------------------------- */
 
-.contact-container {
+footer {
     position: sticky;
     bottom: 0;
+    left: 0.5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    height: 40px;
+    margin-top: 50px auto 0 auto;
+    max-width: 99%;
+    height: 50px;
     background-color: #00476c95;
     outline: 1px solid gray;
     border-radius: 10px;
@@ -342,7 +332,7 @@ h3 a:hover {
 .contact-list a {
     position: relative;
     display: inline-block;
-    margin: 0 40px;
+    margin: 40px;
     font-size: 1.8rem;
     color: whitesmoke;
     text-decoration: none;
@@ -364,92 +354,4 @@ h3 a:hover {
 
 .contact-list a:hover::after {
     transform: scale(1) skewX(-45deg);
-}
-
-/* --------------------------------------------------------------- */
-/*---------------------------MEDIA QUERRRIES-----------------------*/
-/* --------------------------------------------------------------- */
-
-@media (max-width: 480px) {
-
-    body {
-        position: relative;
-    }
-
-    /*----------------------------NAV------------------------------*/
-
-    .nav-list a {
-        padding: 5px;
-        font-size: 1rem;
-        height: 30px;
-    }
-
-    /*---------------------WELCOME SECTION-------------------------*/
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    #quote1,
-    #quote2,
-    #quote3 {
-        font-size: 1rem;
-    }
-
-    /*---------------------PROJECTS SECTION-------------------------*/
-
-
-    .project-heading {
-        padding-top: 50px;
-        font-size: 1.5rem;
-
-    }
-
-    .project-container-grid {
-        grid-template-columns: repeat(1, 2fr);
-    }
-
-    .img-container {
-        width: 360px;
-        height: 240px;
-    }
-
-
-    .img-style {
-        width: 360px;
-        height: 240px;
-    }
-
-    /*---------------------ABOUT SECTION-------------------------*/
-
-    .about-title {
-        font-size: 3rem;
-        margin: 20px auto;
-    }
-
-    .about-description {
-        display: block;
-        max-height: 100%;
-        font-size: 1rem;
-        letter-spacing: 1.5px;
-        margin: 0 auto;
-    }
-
-    /*------------------------CONTACT-----------------------------*/
-
-    .contact-container {
-        flex-direction: column;
-        width: 99%;
-        margin:0 auto;
-    }
-
-    .contact-title {
-        font-size: 1rem;
-    }
-
-    .contact-list a {
-        font-size: 1rem;
-        padding: 3px;
-        margin: 0;
-    }
 }
