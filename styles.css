@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap');
+
 
 /* font-family: 'Permanent Marker', cursive;
 font-family: 'Varela Round', sans-serif; */
 
 /*-----------------GENERAL--------------------*/
 body {
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
     background-image: radial-gradient(circle, #1a3b6e, #00476c, #007b9b, #00b3bd, #58ebd1);
