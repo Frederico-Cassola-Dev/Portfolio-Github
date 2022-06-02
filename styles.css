@@ -124,6 +124,7 @@ h1 {
     font-style: italic;
     color: white;
     margin: 0 auto;
+    transform: scale(0);
     animation-name: hideAnimation;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
