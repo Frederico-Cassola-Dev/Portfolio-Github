@@ -35,6 +35,7 @@ nav {
     left: 0.5%;
     width: 99%;
     height: 40px;
+    margin: 0 auto;
     background-color: #00476c95;
     outline: 1px solid gray;
     border-radius: 10px;
@@ -377,7 +378,7 @@ h3 a:hover {
     }
 
     /*----------------------------NAV------------------------------*/
-
+    
     .nav-list a {
         padding: 5px;
         font-size: 1rem;
@@ -393,7 +394,7 @@ h3 a:hover {
     #quote1,
     #quote2,
     #quote3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     /*---------------------PROJECTS SECTION-------------------------*/
@@ -410,14 +411,14 @@ h3 a:hover {
     }
 
     .img-container {
-        width: 360px;
-        height: 240px;
+        width: 300px;
+        height: 200px;
     }
 
 
     .img-style {
-        width: 360px;
-        height: 240px;
+        width: 300px;
+        height: 200px;
     }
 
     /*---------------------ABOUT SECTION-------------------------*/
@@ -447,9 +448,10 @@ h3 a:hover {
         font-size: 1rem;
     }
 
+
     .contact-list a {
-        font-size: 1rem;
-        padding: 3px;
-        margin: 0;
+        font-size: 0.8rem;
+        padding: 0 5px;
+        margin: 0 auto;
     }
 }
