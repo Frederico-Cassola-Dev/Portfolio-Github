@@ -108,19 +108,12 @@ h1 {
     margin: 0 auto;
 }
 
-.quotes-style {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 3rem;
-    font-style: italic;
-    color: rgb(245, 102, 0);
-}
-
 #quote,
 #quote2,
 #quote3 {
-    position: absolute;
+    position: relative;
     font-family: 'Varela Round', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic;
     color: white;
     margin: 0 auto;
@@ -131,10 +124,10 @@ h1 {
 }
 
 #quote {
-    animation-duration: 15s;
+    animation-duration: 10s;
 }
 
-#quote2 {
+/* #quote2 {
     animation-delay: 5s;
     animation-duration: 15s;
 }
@@ -142,7 +135,7 @@ h1 {
 #quote3 {
     animation-delay: 10s;
     animation-duration: 15s;
-}
+} */
 
 @keyframes hideAnimation {
     0% {
