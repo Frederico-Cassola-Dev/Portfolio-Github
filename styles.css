@@ -115,7 +115,7 @@ h1 {
     color: rgb(245, 102, 0);
 }
 
-#quote1,
+#quote,
 #quote2,
 #quote3 {
     position: absolute;
@@ -130,7 +130,7 @@ h1 {
     animation-iteration-count: infinite;
 }
 
-#quote1 {
+#quote {
     animation-duration: 15s;
 }
 
@@ -380,7 +380,7 @@ h3 a:hover {
     }
 
     /*----------------------------NAV------------------------------*/
-    
+
     .nav-list a {
         padding: 5px;
         font-size: 1rem;
@@ -447,7 +447,7 @@ h3 a:hover {
     .contact-container {
         flex-direction: column;
         width: 99%;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .contact-title {
@@ -469,7 +469,7 @@ h3 a:hover {
     }
 
     /*----------------------------NAV------------------------------*/
-    
+
     .nav-list a {
         padding: 5px;
         font-size: 1.5rem;
@@ -536,7 +536,7 @@ h3 a:hover {
     .contact-container {
         flex-direction: column;
         width: 99%;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .contact-title {
@@ -552,13 +552,13 @@ h3 a:hover {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    
+
     body {
         position: relative;
     }
 
     /*----------------------------NAV------------------------------*/
-    
+
     .nav-list a {
         padding: 5px;
         font-size: 1.5rem;
@@ -626,7 +626,7 @@ h3 a:hover {
     .contact-container {
         width: 99%;
         height: 50px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .contact-title {
@@ -655,10 +655,11 @@ h3 a:hover {
         width: 330px;
         height: 220px;
     }
+
     .contact-container {
         width: 99%;
         height: 50px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .contact-list a {
