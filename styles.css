@@ -104,8 +104,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    outline: 2px solid red;
 }
 
 #quote,
@@ -117,14 +118,12 @@ h1 {
     font-style: italic;
     color: white;
     margin: 0 auto;
-    transform: scale(0);
-    animation-name: hideAnimation;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
+    /* transform: scale(0); */
+    /* animation: hideAnimation 5s ease-out infinite; */
 }
 
 #quote {
-    animation-duration: 10s;
+    /* animation-duration: 6s; */
 }
 
 /* #quote2 {
@@ -138,33 +137,36 @@ h1 {
 } */
 
 @keyframes hideAnimation {
-    0% {
-        transform: scale(0);
+
+    0%,
+    100% {
+        transform: scale(0.1);
     }
 
+    /* 
     15% {
         transform: scale(0);
     }
 
     25% {
         transform: scale(0);
-    }
+    } */
 
     50% {
         transform: scale(1);
     }
 
-    75% {
+    /* 75% {
         transform: scale(0);
     }
 
     85% {
         transform: scale(0);
-    }
+    } */
 
-    100% {
-        transform: scale(0);
-    }
+    /* 100% {
+        transform: scale(0.3);
+    } */
 }
 
 /* ----------------------------------------------------- */
