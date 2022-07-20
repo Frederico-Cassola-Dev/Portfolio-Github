@@ -3,7 +3,6 @@ window.addEventListener('load', startInterval);
 
 const quote = document.querySelector("#quote");
 
-
 // INTERVAL TIME
 const time = 4000;
 
@@ -19,7 +18,6 @@ let i = -1;
 
 //  INITIATE WINDOWS NEW QUOTE
 function getQuote() {
-    // timeInterval = setInterval(getQuote, time);
 
     //create a random number to chose a quote
     randomNumber = Math.floor(Math.random() * quotes.length);
@@ -28,12 +26,6 @@ function getQuote() {
 
     //Print the quote chosen with the randomNumber
     quote.innerHTML = quotes[randomNumber].quote;
-    // author.innerHTML = quotes[randomNumber].author;
-    // profession.innerHTML = quotes[randomNumber].profession;
-    // date.innerHTML = quotes[randomNumber].date;
-
-    // Save the showen object in to tempNewQuote
-    // tempNewQuote.push(quotes[randomNumber]);
 }
 
 //  START TIME RANDOM QUOTE
